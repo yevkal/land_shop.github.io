@@ -1,0 +1,49 @@
+.tags a{
+    border-radius: 6px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    font-size: 12;
+    padding: 4px;
+    margin: 0 4px;
+    
+}
+
+a:before{
+    content: "#";
+    margin: 0px 2px 0px 0px;
+    color: red
+}
+
+.tags{
+    position: relative;
+    margin-top: 1em;
+    width: 600px;
+}
+.tags::before{
+    position: absolute;
+    left: -4px;
+    top: -10px;
+    bottom: -10px;
+    width: 100px;
+    content: "";
+    color: red;
+    border-top: 1px solid red;
+    border-left: 1px solid red;
+    border-bottom: 1px solid red;
+
+    
+}
+
+.tags::after{
+    position:absolute;
+    top: -10px;
+    bottom: -10px;
+    width: 100px;
+    right: 210px;
+    content: "";
+    color: red;
+    border-top: 1px solid red;
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
+}
